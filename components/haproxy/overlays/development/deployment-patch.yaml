@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: haproxy
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/jduimovich0/haproxy@sha256:db91da32585c65f2ba0887015a0b72943ee069d33ba0f94bfbc3601210fc8107
+        name: container-image
+        resources: {}
+status: {}
