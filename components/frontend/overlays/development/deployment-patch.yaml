@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: frontend
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/jduimovich0/frontend@sha256:19962a64cb15bacf9f51a7ffab0b9313fb8bf052662553b73bf50e700c0858f3
+        name: container-image
+        resources: {}
+status: {}
